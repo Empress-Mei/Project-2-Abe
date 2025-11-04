@@ -517,6 +517,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-left: 10px;
   padding-right: 10px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 #fh5co-gallery .fh5co-bg-img, #fh5co-gallery .fh5co-gallery_big {
   float: left;
@@ -526,6 +527,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-gallery .fh5co-bg-img {
   height: 200px;
+  overflow: hidden; /* Bagong dagdag */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Bagong dagdag */
+}
+.fh5co-bg-img {           /* Bagong dagdag */
+  border-radius: 10px;
+}
+#fh5co-gallery .fh5co-bg-img:hover { /* Bago din */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 #fh5co-gallery .fh5co-gallery_big {
   height: 420px;
