@@ -1725,30 +1725,58 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 1;
 }
 
-.form-group {
-  margin-bottom: 30px !important;
-}
-.form-group label {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+
+.reservation-tagline {
+  font-size: 18px;
+  color: rgba(255,255,255,0.90);
+  line-height: 1.8;
+  margin-bottom: 35px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
 }
 
-.form-control {
-  box-shadow: none;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  height: 54px;
-  font-size: 20px;
-  font-weight: 300;
-  font-family: "Open Sans", Arial, sans-serif;
+
+.res-form .form-control {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(212,175,55,0.6);
   color: #fff;
+  padding: 12px 14px;
 }
-.form-control:active, .form-control:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: #fff;
+
+.res-form .form-control::placeholder {
+  color: rgba(255,255,255,0.7);
 }
+
+.res-form label {
+  color: #D4AF37;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+
+.btn.btn-primary {
+  background: #D4AF37;
+  border: none;
+  color: #0B0B0B;
+  padding: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.btn.btn-primary:hover {
+  background: #e6c766;
+}
+
+
+.reservation-image {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.55);
+  object-fit: cover;
+}
+
 
 textarea {
   resize: vertical;
@@ -1833,6 +1861,18 @@ textarea {
   opacity: 1;
   transform: translateY(0);
 }
+.gallery-tagline {
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.92);
+  margin-bottom: 35px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  text-shadow: 0 0 6px rgba(0,0,0,0.75);
+}
+
 
 #fh5co-gallery {
   background: #0b0b0b;
@@ -1878,6 +1918,12 @@ textarea {
   display: block;
   margin: 10px auto 0;
   border-radius: 2px;
+}
+
+#fh5co-gallery .heading-section h3 {
+  color: #D4AF37 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 
