@@ -1739,11 +1739,15 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(212,175,55,0.6);
   color: #fff;
-  padding: 12px 14px;
+  padding: 14px 16px;
+  font-size: 17px;
+  border-radius: 6px;
+  transition: 0.3s ease;
 }
 
 .res-form .form-control::placeholder {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.75);
+  font-size: 16px;
 }
 
 .res-form label {
@@ -1751,8 +1755,14 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 600;
   margin-bottom: 6px;
   display: block;
+  font-size: 18px;
 }
 
+.res-form .form-control:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 10px rgba(212,175,55,0.35);
+  outline: none;
+}
 
 .btn.btn-primary {
   background: #D4AF37;
@@ -1762,6 +1772,8 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 600;
   transition: 0.3s;
   width: 100%;
+  font-size: 18px;
+  border-radius: 6px;
 }
 
 .btn.btn-primary:hover {
