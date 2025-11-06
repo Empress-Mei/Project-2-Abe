@@ -99,72 +99,63 @@ reservation.html
 	</header>
 
 	
-	<div id="fh5co-reservation-form" class="fh5co-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 fh5co-heading animate-box">
-					<h2>Reservation</h2>
-					<div class="row">
-						<div class="col-md-6">
-							<p>Experience the warmth of Filipino hospitality in every meal.
-								Reserve your table today and savor our signature dishes freshly prepared for you and your loved ones.
-								We recommend booking in advance to ensure the best dining experience.</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-6 col-md-push-6 col-sm-6 col-sm-push-6">
-					<form action="#" id="form-wrap">
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="name">Your Name</label>
-								<input type="text" class="form-control" id="name">
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="many">How Many People</label>
-								<select name="many" id="many" class="form-control custom_select">
-									<option value="#">1</option>
-									<option value="#">2</option>
-									<option value="#">3</option>
-									<option value="#">4+</option>
-								</select>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="taskdatetime">When</label>
-								<input type="text" name="task-datetime" id="taskdatetime" class="form-control"/>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="package">Package</label> <!-- bagong dagdag -->
-								<select name="package" id="package" class="form-control custom_select">
-									<option value="regular dining">Regular Dining</option>
-									<option value="couple's set">Couple's Set</option>
-									<option value="family fest">Family Feast</option>
-									<option value="group celebration">Group Celebration</option>
-									<option value="corporate package">Corporate Package</option>
-									<option value="special occasion package">Special Occasion Package</option>
-									<option value="custom request">Custom Request</option>
-								</select>
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<input type="submit" class="btn btn-primary btn-outline btn-lg" value="Submit Form">
-							</div>
-						</div>
+<section id="fh5co-reservation" class="fh5co-section">
+  <div class="container">
 
-					</form>
-				</div>
-				
-				
-			</div>
-		</div>
-	</div>
+    <!-- Heading + Tagline -->
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center heading-section">
+        <h3 class="heading-section">Table Reservation</h3>
+        <p class="reservation-tagline">Magpa-reserve ng mesa para sa inyong salu-salo. Sabihin lang po ang bilang ng bisita at oras, kami na ang bahala.</p>
+      </div>
+    </div>
+
+    <!-- Form + Image Layout -->
+    <div class="row animate-box">
+
+      <!-- FORM LEFT -->
+      <div class="col-md-6">
+        <form action="#" class="res-form">
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Hal. Juan Dela Cruz" required>
+          </div>
+
+          <div class="form-group">
+            <label for="people">How Many People</label>
+            <input type="number" id="people" class="form-control" min="1" placeholder="Hal. 4" required>
+          </div>
+
+          <div class="form-group">
+            <label for="date">When</label>
+            <input type="datetime-local" id="date" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="package">Package</label>
+            <select id="package" class="form-control" required>
+              <option disabled selected>Piliin ang Package</option>
+              <option>Family Feast Package</option>
+              <option>Birthday & Celebration Package</option>
+              <option>Barkada Set Meal</option>
+              <option>Ala Carte Dine-In</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Reserve Table</button>
+
+        </form>
+      </div>
+
+      <!-- IMAGE RIGHT -->
+      <div class="col-md-6 text-center">
+        <img src="images/reservation-placeholder.jpg" alt="Restaurant Ambiance" class="reservation-image">
+      </div>
+
+    </div>
+  </div>
+</section>
 
 	<div id="fh5co-featured-testimony" class="fh5co-section">
 		<div class="container">
