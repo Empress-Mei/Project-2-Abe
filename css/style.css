@@ -443,26 +443,68 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 3em 0;
   }
 }
-.fh5co-section p {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 18px;
-  line-height: 1.5;
+.about-section {
+  padding: 120px 0;
+  background-color: #111;
+  color: #ddd;
 }
 
-.section-heading {
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  color: #D4AF37;
+  margin-bottom: 25px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
   width: 100%;
-  float: left;
-  margin-bottom: 50px;
-}
-.section-heading h2 {
-  font-style: 40px;
-  color: #fff;
-  font-family: "Satisfy", cursive;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(212,175,55,0.25);
+  transition: 0.4s ease;
 }
 
-#fh5co-about .img-wrap img {
-  margin-bottom: 30px;
+.about-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(212,175,55,0.45);
 }
+
+.about-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 14px 34px;
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #D4AF37;
+  color: #111;
+}
+
 @media screen and (max-width: 992px) {
   #fh5co-about .img-wrap img {
     max-width: 100%;
@@ -1753,7 +1795,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .res-form label {
   color: #D4AF37;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   display: block;
   font-size: 18px;
 }
@@ -1764,11 +1806,16 @@ h1, h2, h3, h4, h5, h6, figure {
   outline: none;
 }
 
+.res-form .form-group {
+  margin-bottom: 18px;
+}
+
+
 .btn.btn-primary {
   background: #D4AF37;
   border: none;
   color: #0B0B0B;
-  padding: 12px;
+  padding: 14px;
   font-weight: 600;
   transition: 0.3s;
   width: 100%;
@@ -1781,12 +1828,46 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-.reservation-image {
-  width: 100%;
-  max-width: 480px;
-  border-radius: 10px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.55);
-  object-fit: cover;
+.branch-box {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,175,55,0.4);
+  padding: 22px 26px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.45);
+  margin-top: 25px;
+}
+
+.branch-box h4 {
+  color: #D4AF37;
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.branch-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.branch-list li {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.9);
+}
+
+.branch-list strong {
+  color: #D4AF37;
+  font-weight: 600;
+}
+
+.branch-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.9);
 }
 
 
@@ -1794,6 +1875,8 @@ textarea {
   resize: vertical;
   overflow: auto;
 }
+
+
 
 .row-pb-md {
   padding-bottom: 4em !important;
