@@ -1778,13 +1778,14 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 .res-form .form-control {
-  background: rgba(255,255,255,0.1);
+  background: white;
   border: 1px solid rgba(212,175,55,0.6);
-  color: #fff;
+  color: black;
   padding: 10px 12px;
   font-size: 17px;
   border-radius: 6px;
   transition: 0.3s ease;
+  font-weight: bolder;
 }
 
 .res-form .form-control::placeholder {
